@@ -24,7 +24,7 @@ function displayResult(value) {
     document.getElementById('calculation-result').textContent = value;
 }
 
-/*
+
 // Add event listeners
 document.getElementById('add').addEventListener('click', function() {
     const number1 = parseFloat(document.getElementById('number1').value) || 0;
