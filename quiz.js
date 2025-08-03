@@ -1,10 +1,10 @@
+// 1. Define function
 function checkAnswer() {
+
+// 2. Identify correct answer
     let correctAnswer = "4";
 }
 
-// Identify correct answer
-let userAnswer = document.querySelector('input[name="quiz"]:checked').value;
-console.log(userAnswer)
 
 // 3. Retrieve the user's answer
     const selected = document.querySelector('input[name="quiz"]:checked'); 
@@ -27,3 +27,6 @@ console.log(userAnswer)
         feedbackEl.textContent = "That's incorrect. Try again!";
     }
 }
+
+//Add event listener to submit button
+document.getElementById("submit-answer")?.addEventListener("click", checkAnswer);
