@@ -19,3 +19,11 @@ console.log(userAnswer)
     }
     //If the value is accessed,store in userAnswer variable
     const userAnswer = selected.value; 
+
+// 4. Compare userAnswer with correctAnswer and give feedback
+    if (userAnswer === correctAnswer) {
+        feedbackEl.textContent = "Correct! Well done.";
+    } else {
+        feedbackEl.textContent = "That's incorrect. Try again!";
+    }
+}
